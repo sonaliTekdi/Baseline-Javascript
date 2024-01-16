@@ -1,0 +1,15 @@
+<!-- single block error example -->
+<html>
+  <head></head>
+  <body></body>
+  <script>
+    function validate_Positive_Number(n) {
+      if (n < 0) {
+        throw new Error("Error: Negative numbers are not allowed.");
+      }
+      return n;
+    }
+    console.log("case 1", validate_Positive_Number(3));
+    console.log("case 2", validate_Positive_Number(-5));
+  </script>
+</html>
