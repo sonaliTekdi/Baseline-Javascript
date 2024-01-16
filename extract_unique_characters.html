@@ -1,0 +1,27 @@
+<!--Write a JavaScript function to extract unique characters from a string.
+Example string : "thequickbrownfoxjumpsoverthelazydog" Expected Output :
+"thequickbrownfxjmpsvlazydg"-->
+<html>
+  <head></head>
+  <body></body>
+  <script>
+    function unique_char(str1) {
+      var str = str1;
+      document.write("Input - ", str1, "</br>");
+      var temp = "";
+      for (var x = 0; x < str.length; x++) {
+        if (temp.indexOf(str.charAt(x)) == -1) {
+          temp += str[x];
+        }
+      }
+
+      return temp;
+    }
+
+    document.write("<br>");
+    document.write(
+      "Output - ",
+      unique_char("thequickbrownfoxjumpsoverthelazydog")
+    );
+  </script>
+</html>
