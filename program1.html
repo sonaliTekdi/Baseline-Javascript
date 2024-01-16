@@ -1,0 +1,30 @@
+<!-- multiple block error example -->
+<html>
+  <head></head>
+  <body></body>
+
+  <script>
+    function divide_Numbers(a, b) {
+      try {
+        if (typeof a !== "number" || typeof b !== "number") {
+          throw new TypeError(
+            "Invalid arguments. Both values should be numbers."
+          );
+        }
+        if (b === 0) {
+          throw new Error("Invalid divisor. Cannot divide by zero.");
+        }
+        const result = a / b;
+        console.log("Result:", result);
+      } catch (error) {
+        if (error instanceof TypeError) {
+          console.log("TypeError:", error.message);
+        } else {
+          console.log("Error:", error.message);
+        }
+      }
+    }
+    divide_Numbers(100, 4);
+    divide_Numbers(100, 0);
+  </script>
+</html>
