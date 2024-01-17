@@ -1,0 +1,37 @@
+<!-- JSON Data and Template String:
+Create a JSON object with information about a person and use template strings to display this information in a formatted way. -->
+<html>
+  <head></head>
+  <body></body>
+  <script>
+    const data = [
+      {
+        name: "sonali",
+        city: "karad",
+      },
+      {
+        name: "dhnashree",
+        city: "pune",
+      },
+      {
+        name: "Deepali",
+        city: "sangli",
+      },
+      {
+        name: "Prerana",
+        city: "satara",
+      },
+      {
+        name: "Monika",
+        city: "kolhapur",
+      },
+    ];
+    function getData() {
+      data.forEach((person) => {
+        const info = `${person.name} ${person.city} <br>`;
+        document.write(info);
+      });
+    }
+    getData();
+  </script>
+</html>
