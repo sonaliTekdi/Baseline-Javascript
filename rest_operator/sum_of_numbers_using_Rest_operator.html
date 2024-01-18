@@ -1,0 +1,15 @@
+<!-- Sum of Numbers using Rest Operator -->
+<html>
+  <head></head>
+  <body></body>
+  <script>
+    let addition = 0;
+    function sum(...args) {
+      for (let i of args) {
+        addition += i;
+      }
+      return addition;
+    }
+    document.write(sum(10, 20, 30, 40, 50));
+  </script>
+</html>
