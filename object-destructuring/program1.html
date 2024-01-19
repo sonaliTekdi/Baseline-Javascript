@@ -1,0 +1,22 @@
+<!-- object destructuring-->
+<html>
+  <head></head>
+  <body>
+    <script>
+      let data = [
+        {
+          name: "sonali",
+          age: 28,
+        },
+        {
+          name: "neha",
+          age: 28,
+        },
+      ];
+      data.forEach((person) => {
+        let p = [person.name, person.age];
+        document.write(p + "<br>");
+      });
+    </script>
+  </body>
+</html>
